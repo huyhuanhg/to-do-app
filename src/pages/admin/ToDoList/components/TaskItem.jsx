@@ -6,11 +6,14 @@ import TaskForm from "./TaskForm";
 
 import {deleteTaskAction} from "../../../../redux/actions";
 
-import {connect} from "react-redux";
+import {connect, useDispatch} from "react-redux";
 
 import {useState} from "react";
 
-function TaskItem({task, deleteTask, index}) {
+function TaskItem({task, index}) {
+
+    const dispatch = useDispatch();
+
     const [isShowEditForm, setIsShowEditForm] = useState(false);
 
     return (
@@ -35,7 +38,7 @@ function TaskItem({task, deleteTask, index}) {
                                         style={{
                                             width: "100%",
                                         }}
-                                        onClick={() => deleteTask(index)
+                                        onClick={() => dispatch(deleteTaskAction(index))
                                         }
                                     >
                                         Xóa
@@ -78,10 +81,4 @@ function TaskItem({task, deleteTask, index}) {
     )
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        deleteTask: (index) => dispatch(deleteTaskAction(index)),
-    }
-};
-
-export default connect(null, mapDispatchToProps)(TaskItem);
+export default TaskItem;
