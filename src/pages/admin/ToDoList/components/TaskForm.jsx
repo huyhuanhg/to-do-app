@@ -2,19 +2,19 @@ import {Form, Input, Button} from "antd";
 
 import "../../../../assets/css/taskForm.css"
 
-import {connect} from "react-redux";
+import {useDispatch} from "react-redux";
 
 import {addTaskAction, editTaskAction} from "../../../../redux/actions";
 
 
 function TaskForm({
                       type,
-                      addTask,
-                      editTask,
                       task,
                       index,
                       setIsShowEditForm
                   }) {
+
+    const dispatch = useDispatch();
 
     const [addNewTaskForm] = Form.useForm();
 
@@ -30,9 +30,9 @@ function TaskForm({
     const handleSubmit = (value) => {
         if (type === 'add') {
             addNewTaskForm.resetFields();
-            addTask(value);
+            dispatch(addTaskAction(value));
         } else {
-            editTask(value, index);
+            dispatch(editTaskAction(value, index));
             setIsShowEditForm(false)
         }
     }
@@ -75,11 +75,4 @@ function TaskForm({
     )
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        addTask: (params) => dispatch(addTaskAction(params)),
-        editTask: (params, index) => dispatch(editTaskAction(params, index)),
-    }
-};
-
-export default connect(null, mapDispatchToProps)(TaskForm);
+export default TaskForm;

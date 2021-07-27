@@ -1,6 +1,6 @@
 import {Input} from "antd";
 
-import "../../../../assets/css/search.css"
+import "../../../../assets/css/taskSearch.css"
 
 function Search({setSearchKey}) {
     return (
