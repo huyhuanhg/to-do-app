@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43bac084-283e-4eba-9090-0b8400db2e75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/admin/ToDoList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin/ToDoList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -32,12 +32,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/admin/ToDoList/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../to-do-app_redux-toolkit" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/css" />
       <recent name="$PROJECT_DIR$/src/pages/admin/ToDoList/components" />
     </key>
   </component>
@@ -50,6 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1627392461619</updated>
       <workItem from="1627392463220" duration="590000" />
+      <workItem from="1627393083287" duration="6157000" />
+      <workItem from="1627561437748" duration="604000" />
     </task>
     <servers />
   </component>
@@ -66,5 +70,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
